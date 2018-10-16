@@ -1,0 +1,74 @@
+/*
+Theme Name: Storefront Child
+Theme URI: https://woocommerce.com/storefront/
+Template: storefront
+Author: Automattic
+Author URI: https://woocommerce.com/
+Description: Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout &amp; color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love its lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!
+Tags: e-commerce,two-columns,left-sidebar,right-sidebar,custom-background,custom-colors,custom-header,custom-menu,featured-images,full-width-template,threaded-comments,accessibility-ready,rtl-language-support,footer-widgets,sticky-post,theme-options
+Version: 2.3.4.1539639432
+Updated: 2018-10-15 21:37:12
+
+*/
+
+.smm-mega-menu {
+    padding-top: 5px;
+}
+
+.main-navigation ul li.smm-active .widget h3.widget-title {
+	font-weight: 700;
+}
+
+.woocommerce-active .site-header .site-header-cart {
+    display: none;
+}
+
+.demo_store {
+    background-color: #000;
+	text-align: center;
+}
+
+.entry-title{
+	display: none;
+}
+
+.woocommerce-active .site-header .site-branding {
+    width: 20%;
+	padding-top: 30px;
+}
+
+.woocommerce-active .site-header .site-search {
+    width: 40%;
+}
+
+.wishlist_table .add_to_cart, a.add_to_wishlist.button.alt {
+    -webkit-border-radius: 0px;
+}
+
+.single-product div.product form.cart {
+    display: none;
+}
+
+.info_box{
+	background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.site-search {
+    margin-bottom: 0em;
+}
+
+.main-navigation ul li.smm-active ul.sub-menu {
+    border: 1px solid #f5f5f5!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .info_text {
+        display: none!important;
+    }
+}
+	
+
+	
+	
