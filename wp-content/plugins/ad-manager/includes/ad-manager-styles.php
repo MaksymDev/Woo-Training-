@@ -1,35 +1,26 @@
 <?php
 
-//Load JS on all admin pages
-function admanager_admin_styles( $hook ) {
+// Load CSS on all admin pages
+function ad_manager_admin_styles() {
 
-    wp_register_style(
-        'admanager-admin',
+    wp_enqueue_style(
+        'ad-manager-admin',
         WPPLUGIN_URL . 'admin/css/ad-manager-admin.css',
         [],
         time()
-    );
-
-    if( 'toplevel_page_admanager'  == $hook ) {
-        wp_enqueue_style( 'admanager-admin');
-    }
-
+        );
 }
-add_action( 'admin_enqueue_scripts', 'admanager_admin_styles');
+add_action( 'admin_enqueue_scripts', 'ad_manager_admin_styles' );
+
 
 // Load CSS on the frontend
-function admanager_frontend_styles() {
+function ad_manager_frontend_styles(){
 
-    wp_register_style(
-        'admng-frontend',
-        WPPLUGIN_URL . 'frontend/css/admanager-frontend-styles.css',
+    wp_enqueue_style(
+        'ad-manager-frontend',
+        WPPLUGIN_URL . 'frontend/css/ad-manager-frontend-styles.css',
         [],
         time()
     );
-
-    if( is_single() ) {
-        wp_enqueue_style( 'admanager-frontend' );
-    }
-
 }
-add_action( 'wp_enqueue_scripts', 'admanager_fronted_styles', 100 );
+add_action( 'wp_enqueue_scripts', 'ad_manager_frontend_styles', 100 );

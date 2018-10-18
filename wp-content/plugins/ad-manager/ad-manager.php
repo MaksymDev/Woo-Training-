@@ -25,42 +25,6 @@
  * Domain Path:       /languages
  */
 
-/* !0. TABLE OF CONTENTS */
-
-/*
-
-	1. HOOKS
-		1.1 - registers all our custom shortcodes
-
-	2. SHORTCODES
-		2.1 - slb_register_shortcodes()
-		2.2 - slb_form_shortcode()
-
-	3. FILTERS
-
-	4. EXTERNAL SCRIPTS
-
-	5. ACTIONS
-
-	6. HELPERS
-
-	7. CUSTOM POST TYPES
-
-	8. ADMIN PAGES
-
-	9. SETTINGS
-
-*/
-
-/* !1. HOOKS */
-
-
-/* !1. SHORTCODES */
-
-
-
-
-
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
@@ -118,6 +82,8 @@ function run_ad_manager() {
 run_ad_manager();
 
 
+
+// Attaching files
 define( 'WPPLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 // Create Plugin Admin Menus and Setting Pages
@@ -128,4 +94,123 @@ include( plugin_dir_path( __FILE__ ) . 'includes/ad-manager-styles.php');
 
 // Enqueue Plugin JavaScript
 include( plugin_dir_path( __FILE__ ) . 'includes/ad-manager-scripts.php');
+
+
+
+
+/*
+Plugin Name: Snappy List Builder
+Plugin URI: http://wordpressplugincourse.com/plugins/snappy-list-builder
+Description: The ultimate email list building plugin for WordPress. Capture new subscribers. Reward subscribers with a custom download upon opt-in. Build unlimited lists. Import and export subscribers easily with .csv
+Version: 1.0
+Author: Joel Funk @ Code College
+Author URI: http://joelfunk.codecollege.ca
+License: GPL2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: snappy-list-builder
+*/
+
+
+/* !0. TABLE OF CONTENTS */
+
+/*
+
+	1. HOOKS
+		1.1 - custom shortcodes on init
+
+	2. SHORTCODES
+		2.1 - ad_manager_shortcodes()
+		2.2 - ad_manager_content_shortcode()
+
+	3. FILTERS
+
+	4. EXTERNAL SCRIPTS
+
+	5. ACTIONS
+
+	6. HELPERS
+
+	7. CUSTOM POST TYPES
+
+	8. ADMIN PAGES
+
+	9. SETTINGS
+
+*/
+
+
+/* !1. HOOKS */
+
+// 1.1
+// hint: custom shortcodes on init
+add_action('init', 'ad_manager_shortcodes');
+
+
+
+/* !2. SHORTCODES */
+
+// 2.1
+// hint: custom shortcodes
+function ad_manager_shortcodes() {
+
+    add_shortcode('ad_manager_content', 'ad_manager_content_shortcode');
+
+}
+
+// 2.2
+// hint: returns a html string
+function ad_manager_content_shortcode( $args, $content="") {
+
+    // setup our output variable - the form html
+    $output = '
+	
+		<div class="row">
+           <div class="column"><img src="../wp-content/uploads/2018/10/1810-turquoise.jpg" alt="Italian Trulli"></div>
+           <div class="column"><img src="../wp-content/uploads/2018/10/now-hiring-box.jpg" alt="Italian Trulli"></div>
+           <div class="column"><img src="../wp-content/uploads/2018/10/featured_closet.png" alt="Italian Trulli"></div>
+        </div>
+	
+	';
+
+    // return our results/html
+    return $output;
+
+}
+
+
+
+
+/* !3. FILTERS */
+
+
+
+
+/* !4. EXTERNAL SCRIPTS */
+
+
+
+
+/* !5. ACTIONS */
+
+
+
+
+/* !6. HELPERS */
+
+
+
+
+/* !7. CUSTOM POST TYPES */
+
+
+
+
+/* !8. ADMIN PAGES */
+
+
+
+
+/* !9. SETTINGS */
+
+
 
