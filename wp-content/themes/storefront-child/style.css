@@ -69,6 +69,23 @@ Updated: 2018-10-15 21:37:12
     }
 }
 	
+.onsale {
+    display: none!important;
+}
 
+.price del {
+    opacity: 100;
+    font-weight: 400;
+    color: #ff0000;
+}
+
+.price ins {
+    font-weight: 400;
+    color: #008000;
+}
+
+ul.products li.product .price {
+    margin-bottom: 0rem;
+}
 	
 	

@@ -1,0 +1,11 @@
+2018-10-17T22:17:35+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_filter(), 1 passed in /home/vagrant/repos/Woo-Training/wp-content/themes/storefront-child/functions.php on line 13 and at least 2 expected in /home/vagrant/repos/Woo-Training/wp-includes/plugin.php:106
+Stack trace:
+#0 /home/vagrant/repos/Woo-Training/wp-content/themes/storefront-child/functions.php(13): add_filter('woocommerce_loo...')
+#1 /home/vagrant/repos/Woo-Training/wp-settings.php(424): include('/home/vagrant/r...')
+#2 /home/vagrant/repos/Woo-Training/wp-config.php(89): require_once('/home/vagrant/r...')
+#3 /home/vagrant/repos/Woo-Training/wp-load.php(37): require_once('/home/vagrant/r...')
+#4 /home/vagrant/repos/Woo-Training/wp-admin/admin.php(31): require_once('/home/vagrant/r...')
+#5 /home/vagrant/repos/Woo-Training/wp-admin/theme-editor.php(10): require_once('/home/vagrant/r...')
+#6 {main}
+  thrown
+
