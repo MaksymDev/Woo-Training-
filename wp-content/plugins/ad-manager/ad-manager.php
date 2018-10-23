@@ -165,9 +165,9 @@ function ad_manager_content_shortcode( $args, $content="") {
     $output = '
 	
 		<div class="row">
-           <div class="column"><img src="../wp-content/uploads/2018/10/1810-turquoise.jpg" alt="Italian Trulli"></div>
-           <div class="column"><img src="../wp-content/uploads/2018/10/now-hiring-box.jpg" alt="Italian Trulli"></div>
-           <div class="column"><img src="../wp-content/uploads/2018/10/featured_closet.png" alt="Italian Trulli"></div>
+           <div class="column"><a href="/product-category/jacket/"><img src="../wp-content/uploads/2018/10/1810-turquoise.jpg" alt="Italian Trulli"></a></div>
+           <div class="column"><a href="/product-category/jacket/"><img src="../wp-content/uploads/2018/10/now-hiring-box.jpg" alt="Italian Trulli"></a></div>
+           <div class="column"><a href="/product-category/jacket/"><img src="../wp-content/uploads/2018/10/featured_closet.png" alt="Italian Trulli"></a></div>
         </div>
 	
 	';

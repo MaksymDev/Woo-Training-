@@ -10,9 +10,28 @@
     clear: both;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media screen and (max-width: 992px) {
+    .column {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
     .column {
         float: left;
         width: 100%;
+    }
+
+    .site-header .custom-logo-link img {
+        max-width: 150px;
+        padding-top: 20px;
+    }
+
+    #wpfront-notification-bar div.wpfront-message {
+        color: #ffffff;
+        margin-bottom: 10px;
     }
 }

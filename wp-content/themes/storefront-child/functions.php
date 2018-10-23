@@ -18,7 +18,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 // Adding My Wish List button to the header
 add_action( 'storefront_header', 'jk_storefront_header_content', 40 );
 function jk_storefront_header_content() { ?>
-	<div style="display: block; text-align: right; padding: 0px 0px 20px;">
+	<div style="display: block; text-align: right; margin-top: 10px; padding: 0px 0px 20px;">
 		
 			<a class="button alt" href="/favorites/"><i style="margin-right: 5px;" class="fa fa-heart"></i>MY WISH LIST</a>
 		
